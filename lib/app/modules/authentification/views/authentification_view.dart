@@ -12,6 +12,8 @@ class AuthentificationView extends GetView<AuthentificationController> {
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  static const IconData email_outlined =
+      IconData(0xf018, fontFamily: 'MaterialIcons');
   // sign user in method
   void signUserIn() {}
 
@@ -35,11 +37,12 @@ class AuthentificationView extends GetView<AuthentificationController> {
               // username textfield
               MyTextField(
                 controller: usernameController,
-                hintText: 'Username',
+                hintText: 'Email',
                 obscureText: false,
+                iconData: email_outlined,
               ),
 
-              const SizedBox(height: 10),
+              const SizedBox(height: 20),
 
               // password textfield
 
@@ -49,22 +52,20 @@ class AuthentificationView extends GetView<AuthentificationController> {
                 obscureText: true,
               ),
 
-              const SizedBox(height: 10),
-
-              // sign in button
+              const SizedBox(height: 20),
 
               // sign in button
               MyButton(
                 onTap: signUserIn,
               ),
 
-              const SizedBox(height: 25),
+              const SizedBox(height: 20),
 
               // forgot password?
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Forgot Password?',
@@ -74,7 +75,7 @@ class AuthentificationView extends GetView<AuthentificationController> {
                 ),
               ),
 
-              const SizedBox(height: 50),
+              const SizedBox(height: 20),
               // or continue with
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -123,7 +124,7 @@ class AuthentificationView extends GetView<AuthentificationController> {
                 ],
               ),
 
-              const SizedBox(height: 50),
+              const SizedBox(height: 120),
 
               // not a member? register now
 
@@ -132,7 +133,9 @@ class AuthentificationView extends GetView<AuthentificationController> {
                 children: [
                   Text(
                     'Don\'t have an account ?',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(
+                      color: Colors.grey[700],
+                    ),
                   ),
                   const SizedBox(width: 4),
                   const Text(
