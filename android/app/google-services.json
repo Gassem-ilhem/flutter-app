@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "541867927764",
+    "project_id": "swift-hotel-app",
+    "storage_bucket": "swift-hotel-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541867927764:android:90df286135599c1688b341",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541867927764-bdpl5kgppkc9p4ptra6vcnbav8mqcqkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe9eeBtjEV_0-TzRnKo9rrHiqtLJm4_S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541867927764-bdpl5kgppkc9p4ptra6vcnbav8mqcqkr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "541867927764-3oon1t9o0sui9mi0qciot0257r5d3jet.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
