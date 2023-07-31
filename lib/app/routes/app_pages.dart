@@ -24,7 +24,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.AUTHENTIFICATION,
-      page: () => const AuthentificationView(),
+      page: () => AuthentificationView(),
       binding: AuthentificationBinding(),
     ),
     GetPage(
