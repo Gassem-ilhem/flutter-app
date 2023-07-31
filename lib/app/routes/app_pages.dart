@@ -6,6 +6,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
+import '../modules/dashbord/dashbord_binding.dart';
+import '../modules/dashbord/dashbord_view.dart';
 
 // ignore_for_file: constant_identifier_names
 
@@ -31,6 +33,11 @@ class AppPages {
       name: _Paths.SPLASH,
       page: () => const SplashView(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: _Paths.DASHBORD,
+      page: () => DashbordView(),
+      binding: DashbordBinding(),
     ),
   ];
 }
