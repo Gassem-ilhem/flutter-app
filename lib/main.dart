@@ -6,17 +6,16 @@ import 'package:get/get.dart';
 
 import 'app/routes/app_pages.dart';
 
-Future<void>main() async{
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
-    
     GetMaterialApp(
       title: "Application",
       //initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       theme: ThemeData(fontFamily: 'Raleway'),
-      home: SplashView(),
+      home: const SplashView(),
     ),
   );
 }

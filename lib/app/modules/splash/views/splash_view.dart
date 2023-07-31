@@ -16,7 +16,7 @@ class SplashView extends GetView<SplashController> {
         ),
         body: Column(
           children: [
-            SizedBox(height: 80),
+            const SizedBox(height: 80),
             Center(
               child: Container(
                   width: 150.0,
@@ -25,13 +25,13 @@ class SplashView extends GetView<SplashController> {
                     color: Color.fromRGBO(217, 150, 50, 9),
                     shape: BoxShape.circle,
                   ),
-                  child: Center(
+                  child: const Center(
                       child: Text(
                     "Logo",
                     style: TextStyle(fontSize: 20.0, color: Colors.white),
                   ))),
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             const Center(
               child: Text(
                 'Bienvenue .........',
@@ -41,7 +41,7 @@ class SplashView extends GetView<SplashController> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             const Center(
               child: Text(
                 "Libérez l'expérience de réservation l'hôtel ultime qui améliore vos vacances",
@@ -52,8 +52,8 @@ class SplashView extends GetView<SplashController> {
                 textAlign: TextAlign.center,
               ),
             ),
-            SizedBox(height: 50),
-            SpinKitCircle(
+            const SizedBox(height: 50),
+            const SpinKitCircle(
               size: 100,
               color: Color.fromRGBO(217, 150, 50, 9),
             ),
