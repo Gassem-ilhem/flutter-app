@@ -10,6 +10,8 @@ dependencies:
   get: 4.6.5
   flutter:
     sdk: flutter
+  dropdown_button2: ^2.3.7
+  google_fonts: ^5.1.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -20,3 +22,4 @@ flutter:
   uses-material-design: true
   assets:
     - lib/app/images/
+    - lib/app/images/hotel/

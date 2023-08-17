@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/app/modules/comment/views/comment_view.dart';
+import 'package:flutter_app/app/modules/favoris/views/favoris_view.dart';
+import 'package:flutter_app/app/modules/profile/views/profile_view.dart';
+import 'package:flutter_app/app/modules/search/views/search_view.dart';
 
 import 'package:get/get.dart';
 import './dashbord_controller.dart';
 import '../home/views/home_view.dart';
-import '../maps/maps_view.dart';
-import '../profile/profile_view.dart';
-import '../time/time_view.dart';
 
 class DashbordView extends StatelessWidget {
   const DashbordView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return GetBuilder<DashbordController>(
+      init: DashbordController(),
       builder: (controller) {
         return Scaffold(
           body: SafeArea(
@@ -19,8 +22,9 @@ class DashbordView extends StatelessWidget {
               index: controller.tabIndex,
               children: [
                 HomeView(),
-                TimeView(),
-                MapsView(),
+                FavorisView(),
+                CommentView(),
+                SearchView(),
                 ProfileView(),
               ],
             ),
@@ -35,19 +39,43 @@ class DashbordView extends StatelessWidget {
             selectedItemColor: Colors.black,
             items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.home_outlined, size: 30.0),
+                icon: Image.asset(
+                  'lib/app/images/home.png',
+                  width: 25.0,
+                  height: 25.0,
+                ),
                 label: '',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.access_time, size: 30.0),
+                icon: Image.asset(
+                  'lib/app/images/favoris.png',
+                  width: 25.0,
+                  height: 25.0,
+                ),
                 label: '',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.map_outlined, size: 30.0),
+                icon: Image.asset(
+                  'lib/app/images/hotel.png',
+                  width: 25.0,
+                  height: 25.0,
+                ),
                 label: '',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person_2_outlined, size: 30.0),
+                icon: Image.asset(
+                  'lib/app/images/search.png',
+                  width: 25.0,
+                  height: 25.0,
+                ),
+                label: '',
+              ),
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  'lib/app/images/person.png',
+                  width: 25.0,
+                  height: 25.0,
+                ),
                 label: '',
               ),
             ],
