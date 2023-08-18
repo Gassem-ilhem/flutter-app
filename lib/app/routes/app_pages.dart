@@ -1,3 +1,5 @@
+import 'package:flutter_app/app/modules/home/views/navbar/sidebar.dart';
+import 'package:flutter_app/app/modules/home/views/navbar/sidebar_binding.dart';
 import 'package:get/get.dart';
 
 import '../modules/authentification/bindings/authentification_binding.dart';
@@ -38,6 +40,11 @@ class AppPages {
       name: _Paths.DASHBORD,
       page: () => DashbordView(),
       binding: DashbordBinding(),
+    ),
+    GetPage(
+      name: _Paths.SIDEBAR,
+      page: () => Sidebar(),
+      binding: SidebarBinding(),
     ),
   ];
 }

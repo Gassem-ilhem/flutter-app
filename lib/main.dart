@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/app/modules/dashbord/dashbord_view.dart';
+import 'package:flutter_app/app/modules/home/views/navbar/sidebar.dart';
 
 import 'package:get/get.dart';
 
@@ -11,7 +12,7 @@ void main() {
       title: "Application",
       //initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
-      home: DashbordView(),
+      home: Sidebar(),
     ),
   );
 }

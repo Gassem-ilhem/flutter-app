@@ -19,4 +19,5 @@ abstract class _Paths {
   static const SPLASH = '/splash';
   static const DASHBORD = '/dashbord';
   static const PROFILE = '/profile';
+  static const SIDEBAR = '/sidebar';
 }
